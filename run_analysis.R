@@ -8,6 +8,7 @@
 ##     each variable for each activity and each subject.
 
 library(dplyr)
+library(reshape2)
 
 mainFolder <- "UCI HAR Dataset\\"
 dataFiles <- paste(mainFolder, c("train\\x_train.txt",  "test\\x_test.txt"),  sep="")

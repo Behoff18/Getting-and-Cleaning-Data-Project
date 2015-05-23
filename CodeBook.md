@@ -12,7 +12,9 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-The file "tidyData.txt contains the mean value of each of 57 variables for 6 activities
+The data was combined from the training and testing data sets, reduced to only the values for Mean and Standard Deviation measures, then summarized as the mean of each measure.
+
+The file "tidyData.txt" contains the mean value of each of 57 variables for 6 activities
 
 activityCode activity
 1            WALKING

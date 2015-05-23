@@ -63,3 +63,7 @@ tidyData <- summarise_each(groups, funs(mean))
 
 ## Save it to a file for upload
 write.table(tidyData, file="tidyData.txt", row.name=FALSE)
+
+#Also crteate a long version
+tidyDataLong <- melt(tidyData, id.vars=c("activityCode", "activity"), measure.vars=c(3:ncol(tidyData)))
+write.table(tidyDataLong, file="tidyDataLong.txt", row.name=FALSE)
